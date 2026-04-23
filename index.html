@@ -123,6 +123,12 @@
 
 
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStory" data-bs-slide="prev" aria-label="Previous story slide">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselStory" data-bs-slide="next" aria-label="Next story slide">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
           </div>
         </section>
 
@@ -133,13 +139,15 @@
               <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Product slide 2"></button>
               <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Product slide 3"></button>
               <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="3" aria-label="Product slide 4"></button>
+              <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="4" aria-label="Product slide 5"></button>
+              <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="5" aria-label="Product slide 6"></button>
             </div>
             <div class="carousel-inner">
               <article class="carousel-item active">
                 <div class="slide-card" style="--bg:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=80')">
                   <div class="slide-overlay"></div>
                   <div class="slide-content">
-                    <span class="badge text-bg-warning mb-3">Slide 5</span>
+                    <span class="badge text-bg-warning mb-3">Slide 4</span>
                     <h2>Solution + Architecture</h2>
                     <div class="chip-grid">
                       <span class="chip">Next.js Frontend</span>
@@ -156,13 +164,60 @@
               </article>
 
               <article class="carousel-item">
+                <div class="slide-card" style="--bg:url('https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=1800&q=80')">
+                  <div class="slide-overlay"></div>
+                  <div class="demo-gallery screenshot-page">
+                    <div class="demo-info">
+                      <span class="badge text-bg-secondary mb-2">Screenshots</span>
+                      <h2>Application Screens</h2>
+                      <p>Admin first, then patient and caregiver dashboards, followed by the rest of the key product views.</p>
+                    </div>
+                    <div class="screenshot-stack">
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Admin%20Dashboard.png" alt="Admin dashboard screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Patient%20Dashboard.png" alt="Patient dashboard screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Caregiver%20Dashboard.png" alt="Caregiver dashboard screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Medications.png" alt="Medications screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Adherence.png" alt="Adherence screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Adherence%202.png" alt="Adherence analytics screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Caregivers.png" alt="Caregivers list screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Profile.png" alt="Profile screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Drug%20Directory.png" alt="Drug directory screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/Safty%20center.png" alt="Safety center screen" loading="lazy">
+                      </figure>
+                      <figure class="screenshot-card">
+                        <img src="images/screenshots/ScreSchedule.png" alt="Medication schedule screen" loading="lazy">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="carousel-item">
                 <div class="slide-card" style="--bg:url('https://images.unsplash.com/photo-1666887360742-974779b94944?auto=format&fit=crop&w=1800&q=80')">
                   <div class="slide-overlay"></div>
                   <div class="demo-split">
                     <div class="demo-info">
-                      <span class="badge text-bg-danger mb-2">Demo 1 of 3</span>
+                      <span class="badge text-bg-danger mb-2">Demo 1 of 4</span>
                       <h2>Patient &amp; Caregiver Dashboards</h2>
-                      <p class="speaker-line">Speaker: Ravindar</p>
                       <ul>
                         <li>Patient login, dashboard and medication schedule</li>
                         <li>Mark doses taken and review adherence trends</li>
@@ -171,7 +226,7 @@
                       </ul>
                     </div>
                     <div class="demo-video-wrap">
-                      <video class="demo-video" controls preload="metadata">
+                      <video class="demo-video" controls preload="metadata" playsinline data-autoplay="true">
                         <source src="videos/Patient%20caregiver%20dashboards.mp4" type="video/mp4">
                       </video>
                     </div>
@@ -184,9 +239,8 @@
                   <div class="slide-overlay"></div>
                   <div class="demo-split">
                     <div class="demo-info">
-                      <span class="badge text-bg-info mb-2">Demo 2 of 3</span>
+                      <span class="badge text-bg-info mb-2">Demo 2 of 4</span>
                       <h2>Caregiver &amp; Admin Linking</h2>
-                      <p class="speaker-line">Speaker: Jahnavi</p>
                       <ul>
                         <li>Patient sends a caregiver request</li>
                         <li>Caregiver accepts the request and gains access</li>
@@ -195,7 +249,7 @@
                       </ul>
                     </div>
                     <div class="demo-video-wrap">
-                      <video class="demo-video" controls preload="metadata">
+                      <video class="demo-video" controls preload="metadata" playsinline data-autoplay="true">
                         <source src="videos/Patient%20Caregiver%20linking.mp4" type="video/mp4">
                       </video>
                     </div>
@@ -208,9 +262,8 @@
                   <div class="slide-overlay"></div>
                   <div class="demo-split">
                     <div class="demo-info">
-                      <span class="badge text-bg-warning mb-2">Demo 3 of 3</span>
+                      <span class="badge text-bg-warning mb-2">Demo 3 of 4</span>
                       <h2>Chatbot + Admin Features</h2>
-                      <p class="speaker-line">Speaker: Doyen</p>
                       <ul>
                         <li>AI chat in FDA mode and My Records mode</li>
                         <li>Text-to-speech for inclusive accessibility</li>
@@ -219,7 +272,7 @@
                       </ul>
                     </div>
                     <div class="demo-video-wrap">
-                      <video class="demo-video" controls preload="metadata">
+                      <video class="demo-video" controls preload="metadata" playsinline data-autoplay="true">
                         <source src="videos/Chat%20bot.mp4" type="video/mp4">
                       </video>
                     </div>
@@ -227,7 +280,36 @@
                 </div>
               </article>
 
+              <article class="carousel-item">
+                <div class="slide-card" style="--bg:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1800&q=80')">
+                  <div class="slide-overlay"></div>
+                  <div class="demo-split">
+                    <div class="demo-info">
+                      <span class="badge text-bg-success mb-2">Demo 4 of 4</span>
+                      <h2>Registration Workflow</h2>
+                      <ul>
+                        <li>Account registration path for new users</li>
+                        <li>Role-specific onboarding steps</li>
+                        <li>Validation and secure account creation</li>
+                        <li>Smooth entry into the right dashboard after signup</li>
+                      </ul>
+                    </div>
+                    <div class="demo-video-wrap">
+                      <video class="demo-video" controls preload="metadata" playsinline data-autoplay="true">
+                        <source src="videos/Registration%20Workflow.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct" data-bs-slide="prev" aria-label="Previous product slide">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct" data-bs-slide="next" aria-label="Next product slide">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
           </div>
         </section>
 
@@ -319,6 +401,12 @@
                 </div>
               </article>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDelivery" data-bs-slide="prev" aria-label="Previous delivery slide">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDelivery" data-bs-slide="next" aria-label="Next delivery slide">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
           </div>
         </section>
 
@@ -360,7 +448,7 @@
                     <a class="btn btn-warning btn-lg mt-3" href="https://safe-dose.org/" target="_blank" rel="noopener noreferrer">Visit safe-dose.org</a>
                     <div class="thanks-block mt-4">
                       <h4>Special Thanks</h4>
-                      <p>To our professor and the ITE 5425 course team at Humber Polytechnic for their guidance and support throughout this project.</p>
+                      <p>To our Professor Shadad, Panel, classmates, and course team at Humber Polytechnic for their guidance and support throughout this project.</p>
                     </div>
                   </div>
                 </div>
@@ -384,6 +472,12 @@
                 </div>
               </article>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFuture" data-bs-slide="prev" aria-label="Previous future slide">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFuture" data-bs-slide="next" aria-label="Next future slide">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
           </div>
         </section>
 
@@ -431,6 +525,12 @@
                 </div>
               </article>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselResources" data-bs-slide="prev" aria-label="Previous resources slide">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselResources" data-bs-slide="next" aria-label="Next resources slide">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
           </div>
         </section>
       </div>

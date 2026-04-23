@@ -32,6 +32,27 @@
     return Math.max(0, items.findIndex((item) => item.classList.contains('active')));
   }
 
+  function syncActiveMedia() {
+    const activePane = sectionPanes[getActiveSectionIndex()];
+    const activeSlide = activePane?.querySelector('.carousel-item.active');
+    const allVideos = Array.from(document.querySelectorAll('.demo-video'));
+
+    allVideos.forEach((video) => {
+      if (!activeSlide || !activeSlide.contains(video)) {
+        video.pause();
+        return;
+      }
+
+      if (!video.dataset.autoplay) return;
+
+      video.currentTime = 0;
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(() => {});
+      }
+    });
+  }
+
   function updateStatus() {
     const sectionIndex = getActiveSectionIndex();
     const activeCarousel = getActiveCarouselMeta();
@@ -39,6 +60,7 @@
 
     sectionLabel.textContent = `Section ${sectionIndex + 1} / ${sectionTabs.length}`;
     slideLabel.textContent = `Slide ${slideIndex + 1}`;
+    syncActiveMedia();
   }
 
   function activateSection(targetIndex) {
