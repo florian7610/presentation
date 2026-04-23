@@ -268,6 +268,236 @@ ol {
   --bs-table-bg: rgba(2, 12, 24, 0.52);
   --bs-table-striped-bg: rgba(255, 255, 255, 0.06);
 }
+/* ── Video demo slides ── */
+.demo-split {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 1.5rem;
+  padding: clamp(0.8rem, 2vw, 1.8rem);
+  align-items: center;
+}
+
+.demo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.demo-video-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.demo-video {
+  width: 100%;
+  max-height: 72vh;
+  border-radius: 0.9rem;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 36px rgba(0, 0, 0, 0.55);
+  background: #000;
+  object-fit: contain;
+}
+
+/* ── Competitive positioning table ── */
+.comp-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.35rem;
+  font-size: clamp(0.82rem, 1.25vw, 1rem);
+}
+
+.comp-table thead th {
+  color: #94c9f8;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  white-space: nowrap;
+}
+
+.comp-table tbody tr {
+  background: rgba(4, 18, 40, 0.55);
+}
+
+.comp-table tbody tr:hover {
+  background: rgba(54, 210, 198, 0.12);
+}
+
+.comp-table tbody td {
+  padding: 0.55rem 0.7rem;
+  color: #e6f0ff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  white-space: nowrap;
+}
+
+.comp-table tbody tr td:first-child {
+  border-radius: 0.45rem 0 0 0.45rem;
+  white-space: normal;
+}
+
+.comp-table tbody tr td:last-child {
+  border-radius: 0 0.45rem 0.45rem 0;
+}
+
+.comp-table .check {
+  color: #34d399;
+  font-weight: 700;
+}
+
+.comp-table .cross {
+  color: #f87171;
+  font-weight: 600;
+}
+
+.comp-table .limited {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+/* ── Impact + Closing slide ── */
+.impact-slide {
+  max-width: 900px;
+  justify-content: flex-start;
+  padding-top: clamp(1.5rem, 5vh, 4rem);
+}
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.impact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: #eaf1ff;
+}
+
+.impact-list li::before {
+  content: "✦";
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-top: 0.28rem;
+  flex-shrink: 0;
+}
+
+.thanks-block {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(7, 20, 35, 0.55);
+  border-radius: 0.9rem;
+  padding: 0.8rem 1rem;
+}
+
+.thanks-block h4 {
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+/* ── Resources section ── */
+.resources-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resources-container .slide-card {
+  width: 95%;
+  max-width: 1100px;
+  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.resources-content {
+  width: 100%;
+  height: 100%;
+  max-width: 1180px !important;
+  padding: clamp(1rem, 2vw, 1.8rem) !important;
+  justify-content: center;
+}
+
+.resources-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  gap: 0.5rem;
+  padding: 1rem 0.85rem;
+  background: rgba(7, 20, 35, 0.65);
+  border: 2px solid rgba(54, 210, 198, 0.35);
+  border-radius: 0.9rem;
+  text-decoration: none;
+  color: #eaf1ff;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.resource-card:hover {
+  border-color: var(--accent);
+  background: rgba(54, 210, 198, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(54, 210, 198, 0.25);
+}
+
+.resource-icon {
+  font-size: 1.9rem;
+  color: var(--accent);
+}
+
+.resource-card h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0;
+  color: #94c9f8;
+}
+
+.resource-card p {
+  font-size: 0.76rem;
+  margin: 0;
+  color: #b9c5da;
+}
+
+.resources-note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b9c5da;
+}
+
+@media (max-width: 900px) {
+  .demo-split {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    overflow-y: auto;
+  }
+
+  .demo-video {
+    max-height: 40vh;
+  }
+
+  .resources-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 @media (max-width: 1100px) {
   .top-nav {
